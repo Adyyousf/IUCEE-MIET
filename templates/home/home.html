@@ -1,27 +1,124 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+  img {
+    display: block;
+  }
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>This is home page</h1>
+  .thumbnail {
+    position: relative;
+    display: inline-block;
+  }
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+</style>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<div id="box-search">
+  <div class="thumbnail">
+    <img src="/static/img/pic1.jpg" alt="" height="496" width="1519">
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
+    <div class="caption">
+      <p class="display-1" style="font-family:playfair display,serif">IUCEE</p>
+      <p class="display-2" style="font-family:playfair display,serif">STUDENT CHAPTER</p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h2 class="text-center py-3">Who are we!</h2>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="text-center">
+        <img src="/static/img/s1.jpg" class="rounded mx-auto d-block" alt="..." height="200" width="300">
+        <div class="my-4">
+          <h5>About Us!</h5>
+          <p>IUCEE-Student Chapter at Model Institute of Engineering and Technology is a close knit community that
+            aspires to create an environment for students to grow and instil a sense of giving back to the society. </P>
+          <a href="/about"><button class="btn btn-outline-primary "> Read more</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="text-center">
+        <img src="/static/img/s2.jpg" class="rounded mx-auto d-block" alt="..." height="200" width="300">
+        <div class="my-4">
+          <h5>Our Vision</h5>
+          <p>"To create global awareness on Sustainable development and become a hub of world class learning and
+            innovation"</P>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="text-center">
+        <img src="/static/img/s3.jpg" class="rounded mx-auto d-block" alt="..." height="200" width="300">
+        <div class="my-4">
+          <h5>Mission</h5>
+          <p>
+            <ul>
+              <li> To provide sustainable development solutions for improving the quality of life.</li>
+              <li> To build an ecosystem for materialising ideas & prototypes helpful for our college and society
+                utilizing engineering skills.</li>
+              <li> To create a society where technology helps in preservation of the environment.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container-fluid mx-0 px-0 my-4 py-2" >
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="/static/img/b1.jpg" class="d-block w-100" alt="..." height="400" >
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="display-5">
+            <strong>IUCEE CLEAN AND GREEN CAMPUS</strong></h5>
+          <p class="display-6">The students have started a vermicomposting project under IUCEE for waste segregation and disposal.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/b2.jpg" class="d-block w-100" alt="..." height="400">
+       <div class="carousel-caption d-none d-md-block">
+          <h5 class="display-5">
+            <strong>IUCEE CLEAN AND GREEN CAMPUS</strong></h5>
+          <p class="display-6">The students have started a vermicomposting project under IUCEE for waste segregation and disposal.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+{% endblock body %}
