@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}Objectives{% endblock title %}
+{% block objactive %}active{% endblock objactive %}
+
+
+{% block body %}
+<style>
+    {% comment %} .container {
+        min-height: 90vh;
+    } {% endcomment %}
+
+    .row {
+        min-height: 40vh;
+    }
+
+    .cover-container {
+        max-width: 42em;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+    
+</style>
+<div class="container text-center  px-4 py-3">
+    <p class="display-4"> SHORT TERM </p>
+    <div class="row gx-5">
+        <div class="col bg-dark text-light mx-1 px-2">
+            <p class="my-2 p-3"><h3>Project </h3></p>
+            <small class="text-muted p-3">To complete the Project : IUCEE Clean and Green Campus.</small>  
+        </div>
+        <div class="col bg-dark text-light mx-1 px-2">
+            <p class="my-2 p-3"><h3>Seminars</h3> </p>
+             <small class="text-muted">Conducting at least a seminar per month</small> 
+        </div>
+        <div class="col bg-dark text-light mx-1 px-2">
+            <p class="my-2 p-3"><h3>Student Conventions</h3> </p> 
+            <small class="text-muted">Conduct various events for students to participate in.</small> 
+        </div>
+
+    </div>
+</div>
+
+<div class="container text-center  px-4 py-3">
+    <p class="display-4"> LONG TERM </p>
+    <div class="row gx-5">
+        <div class="col bg-dark text-light mx-1 px-2">
+            <p class="my-2 p-3 display-6  text-muted">To foster a competitive coding culture.</p>
+        </div>
+        <div class="col bg-dark text-light mx-1 px-2">
+            <p class="my-2 p-3 display-6 text-muted">To develop solutions for increasing pollution in water bodies.</p>
+        </div>
+
+    </div>
+</div>
+
+{% endblock body %}

@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock title %}
+{% block homeactive %}active{% endblock homeactive %}
 {% block body %}
-
+ 
 <style>
   img {
     display: block;
@@ -23,9 +24,9 @@
   }
 </style>
 
-<div id="box-search">
+<div id="box-search" class="container-fluid px-0">
   <div class="thumbnail">
-    <img src="/static/img/pic1.jpg" alt="" height="496" width="1519">
+    <img src="/static/img/pic1.jpg" alt="" height="496" width="100%" class="">
 
     <div class="caption">
       <p class="display-1" style="font-family:playfair display,serif">IUCEE</p>

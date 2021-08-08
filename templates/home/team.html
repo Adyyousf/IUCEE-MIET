@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}Team{% endblock title %}
+{% block teamactive %}active{% endblock teamactive %}
+{% block body %}
+
+<style>
+    .greeting{
+        border: 1px solid;
+    }
+</style>
+
+<div class="greeting container text-center display-2 my-3">OUR TEAM</div>
+
+<div class="container py-1">
+    <!-- Three columns of text below the carousel -->
+    <div class="row justify-content-md-center text-center gx-5">
+        <div class="col-lg-4 bg-success mx-1 my-1">
+            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm1.jpg" alt="">
+            <h2>Parveen Abrol</h2>
+            <p>Faculty Advisor</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4  bg-success my-1">
+            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm2.jpg" alt="">
+
+            <h2>Zuhaib Fayaz</h2>
+            <p>President</p>
+
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4  bg-success mx-1">
+            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm3.jpg" alt="">
+
+            <h2>Dhvani Gupta</h2>
+            <p>Vice - President</p>
+
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
+<div class="container my-1">
+    <div class="row justify-content-md-center text-center gx-5">
+        <div class="col-lg-4 bg-success mx-1">
+            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm4.jpg" alt="">
+            <h2>Ankush Randhawa</h2>
+            <p>Secretary</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4  bg-success ">
+            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm5.jpg" alt="">
+
+            <h2>Mehvish Farooq</h2>
+            <p>Treasurer</p>
+
+
+        </div><!-- /.col-lg-4 -->
+        
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+{% endblock body%}
