@@ -3,59 +3,70 @@
 {% block teamactive %}active{% endblock teamactive %}
 {% block body %}
 
-<style>
-    .greeting{
-        border: 1px solid;
-    }
-</style>
+<!-- Header -->
+<header class="bg-primary text-center py-5 mb-4">
+    <div class="container">
+        <h1 class="fw-light text-white">Meet the Team</h1>
+    </div>
+</header>
 
-<div class="greeting container text-center display-2 my-3">OUR TEAM</div>
+<!-- Page Content -->
+<div class="container shadow">
+    <div class="row justify-content-md-center gx-4 text-center">
+        <!-- Team Member 1 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="/static/img/tm1.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Parveen Abrol</h5>
+                    <div class="card-text text-black-50">Faculty Advisor</div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="/static/img/tm2.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Zuhaib Fayaz</h5>
+                    <div class="card-text text-black-50">President</div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="/static/img/tm3.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Dhvani Gupta</h5>
+                    <div class="card-text text-black-50">Vice - President</div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="/static/img/tm4.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Ankush Randhawa</h5>
+                    <div class="card-text text-black-50">Secretary</div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Member 5 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <img src="/static/img/tm5.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Mehvish Farooq</h5>
+                    <div class="card-text text-black-50">Treasurer </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
 
-<div class="container py-1">
-    <!-- Three columns of text below the carousel -->
-    <div class="row justify-content-md-center text-center gx-5">
-        <div class="col-lg-4 bg-success mx-1 my-1">
-            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm1.jpg" alt="">
-            <h2>Parveen Abrol</h2>
-            <p>Faculty Advisor</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4  bg-success my-1">
-            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm2.jpg" alt="">
-
-            <h2>Zuhaib Fayaz</h2>
-            <p>President</p>
-
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4  bg-success mx-1">
-            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm3.jpg" alt="">
-
-            <h2>Dhvani Gupta</h2>
-            <p>Vice - President</p>
-
-        </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-</div><!-- /.container -->
-<div class="container my-1">
-    <div class="row justify-content-md-center text-center gx-5">
-        <div class="col-lg-4 bg-success mx-1">
-            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm4.jpg" alt="">
-            <h2>Ankush Randhawa</h2>
-            <p>Secretary</p>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4  bg-success ">
-            <img class="rounded-circle mx-auto d-block w-50 p-3" src="/static/img/tm5.jpg" alt="">
-
-            <h2>Mehvish Farooq</h2>
-            <p>Treasurer</p>
-
-
-        </div><!-- /.col-lg-4 -->
-        
-    </div><!-- /.row -->
-
-</div><!-- /.container -->
+</div>
+<!-- /.container -->
 
 {% endblock body%}
