@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}MOM{% endblock title %}
+
+
+
+{% block body %}
+{% for a in content %}
+<p class="display-4">
+    Minutes of Meeting- {{a.date}}
+</p>
+
+<p>
+    {{a.task|safe}}
+    {% endfor %}
+
+</p>
+
+<div class="text-center">
+    <a href="{{request.META.HTTP_REFERER}}">Go back</a>
+</div>
+
+{% endblock body %}

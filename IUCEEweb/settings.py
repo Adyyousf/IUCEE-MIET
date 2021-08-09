@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bczn^$ma#=s+5n=7guno0nt+cz#aev-ajs^+8@g8(h9^1*idfk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://iuceemiet.herokuapp.com/', 'localhost', '127.0.0.1']
 
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['https://iuceemiet.herokuapp.com/', 'localhost', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.humanize',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',

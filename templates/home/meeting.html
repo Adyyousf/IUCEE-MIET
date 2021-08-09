@@ -4,16 +4,22 @@
 {% block body %}
 
 <div class="container-fluid px-0">
-<img src="https://static.wixstatic.com/media/64c505_3ba01ffd0ecf44f9a5ec12ff956d7d8b~mv2.jpg/v1/fill/w_1349,h_423,al_c,q_85,usm_0.66_1.00_0.01/64c505_3ba01ffd0ecf44f9a5ec12ff956d7d8b~mv2.webp" alt="" class="img-fluid">
+    <img src="https://static.wixstatic.com/media/64c505_3ba01ffd0ecf44f9a5ec12ff956d7d8b~mv2.jpg/v1/fill/w_1349,h_423,al_c,q_85,usm_0.66_1.00_0.01/64c505_3ba01ffd0ecf44f9a5ec12ff956d7d8b~mv2.webp"
+        alt="" class="img-fluid">
 
-<div class="caption text-center display-4 my-3"><p><strong>Minutes Of Meeting</strong></p></div>
+    <div class="caption text-center display-4 my-3">
+        <p><strong>Minutes Of Meeting</strong></p>
+    </div>
 </div>
 <div class="container">
-    <h3><u>Dates</u></h3>
-    <ul>
-    <li>30.05.2021</li>
-    <li>29.07.2021</li>
-    </ul>
+    <p class="display-4"><u>Dates</u></p>
+
+    {% for m in allTasks %}
+    {{m.date|slice:":10"}} 
+    <a href="/tasks/{{m.sno}}" role="button" class="">view</a>
+    <br>
+    {% endfor %}
+
 </div>
 
 {% endblock body %}
